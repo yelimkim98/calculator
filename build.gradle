@@ -2,8 +2,14 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
+jar {
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
 version '1.0-SNAPSHOT'
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
